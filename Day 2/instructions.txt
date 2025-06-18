@@ -1,0 +1,36 @@
+# 🔬 Reactor Safety Report Analyzer
+This repository contains a Python solution to an Advent of Code–style puzzle involving the analysis of safety reports from the Red-Nosed Reindeer nuclear fusion/fission plant.
+
+🧩 Problem Overview
+
+You arrive at the Red-Nosed reactor to help The Historians search for the missing Chief Historian. While there’s no sign of them at the facility, the engineers request your help analyzing some unusual reactor data.
+
+
+You're given a text file where each line represents a **report** containing a sequence of **integers**, called *levels*, separated by spaces:
+Each report must be checked to determine whether it's **safe** or **unsafe**.
+
+---
+
+ ✅ Part One – Basic Safety Check
+
+A report is considered **safe** if **both** of the following conditions are met:
+
+1. The levels must be either *strictly increasing* or *strictly decreasing*.
+2. The absolute difference between any two **adjacent** levels must be between **1 and 3** inclusive.
+
+
+In the original dataset, **402** reports were considered safe under these rules.
+
+---
+
+🛠️ Part Two – The Problem Dampener
+
+The engineers later inform you of a reactor module called the **Problem Dampener**, which allows **one bad level** in an otherwise safe report to be ignored.
+
+Now, a report is safe if:
+
+- It passes the original rules; **or**
+- **Removing one level** makes it pass the original rules.
+
+
+With the Problem Dampener enabled, the number of safe reports increases to **455**.
